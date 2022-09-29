@@ -1,0 +1,184 @@
+*{
+   box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family:'Poppins', sans-serif;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+}
+
+.container{
+   width: 352px;
+   height: 650px;
+ margin: 0 auto;
+ background:#ffffff;
+ border: 16px solid rgba(255, 0, 0, 0.692);
+ margin-top: 2em;
+ margin-bottom: 2em;
+ border-radius: 50px;
+ border-top-width: 60px;
+border-bottom-width: 60px;
+}
+
+.rex{
+   width: 320.8px;
+   padding-right: 0;
+   height: 400px;
+   position: relative;
+}
+
+/* =================
+  Typography
+  ================= */
+
+ h1{
+font-style: normal;
+font-weight: 600;
+margin-left: 10px;
+font-size: 2rem;
+line-height: 36px;
+position: absolute;
+margin: 0;
+color: rgba(255, 0, 0, 0.692);
+bottom: 7.5em;
+margin-left: 10px;
+
+  }
+ 
+p{
+  font-style: normal;
+font-weight: 300;
+font-size: 1rem;
+line-height: 28px;
+color: rgba(255, 0, 0, 0.692);
+position: absolute;
+bottom: 13em;
+margin-left: 10px;
+
+
+
+}
+
+/* =================
+  header
+  ================= */
+  .header{
+   display: flex;
+   justify-content: space-between;
+   height: 81px;
+  }
+  .profile{
+   width: 32.32px;
+   height: 34px;
+   margin-top: 1em;
+   margin-left: 1em;
+  }
+
+  .logo{
+   width: 84px;
+   height: 42px;
+   margin-top: 1em;
+  }
+
+  .chat{
+   width: 32.32px;
+   height: 34px;
+   margin-top: 1em;
+   margin-right: 1em;
+  }
+
+  .profile:hover, .chat:hover{
+   font-size: 1.2em ;
+  }
+
+  .rex-container{
+   display: block;
+  }
+  /* =================
+  footer
+  ================= */
+ 
+.footer{
+   display: flex;
+   justify-content: space-around;
+   background-color: #FFF;
+   border-radius: 20px;
+   margin-top: 1em;
+
+  }
+  .footer .btn {
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+   background-color: #FFF;
+   border: none;
+   box-shadow: 1px 5px 14px hsl(0, 0%, 0%, 0.15);
+   margin: 3px 20px;
+   background-position: center;
+   background-size: 50%;
+   background-repeat: no-repeat;
+}
+.footer .btn:hover {
+   background-color: hsla(161, 100%, 42%, 0.1);
+   box-shadow: 1px 5px 14px hsla(161, 94%, 14%, 0.1);
+}
+.reject {
+   background-image: url(images/icon-cross.png);
+}
+.like {
+   background-image: url(images/icon-heart.png);
+}
+
+.end-message {
+   font-size: 1.2rem;
+   color: #000;
+   text-align: center;
+   margin: 0px auto;
+   margin-left: 10px;
+}
+
+.reaction-left {
+   background-image: url(images/badge-like.png);
+}
+.reaction-right {
+   background-image: url(images/badge-nope.png);
+}
+
+
+.reaction-left, .reaction-right{
+   position: absolute;
+   top: 33%;
+   width: 160px;
+   margin-left: 7px;
+   height: 80px;
+   background-size: cover;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+    -webkit-animation-name: effect;
+    animation-name: effect;
+     
+}
+
+@keyframes effect{
+   0%{
+     opacity: 0;
+   }
+   10%{
+     opacity:.50;
+     transform-origin: 50% 50%;
+     transform: rotate(10deg) scale(5);
+     transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+   }
+   100%{
+     opacity:1;
+     transform: rotate(-35deg) scale(1);
+   }
+ }
+
+
+
+
