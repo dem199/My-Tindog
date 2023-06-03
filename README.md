@@ -35,7 +35,7 @@ To get started with the Tindog App, follow these steps:
 
 1. #### Clone the repository:
 
-```javascript
+```bash
 
 git clone https://github.com/dem199/My-Tindog
 
@@ -43,16 +43,16 @@ git clone https://github.com/dem199/My-Tindog
 
 2. #### Install the required dependencies:
 
-```javascript
+```bash
 
-cd tindog
+cd My tindog
 npm install
 
 ```
 
 3. #### Launch the app locally:
 
-```javascript
+```sql
 
 npm start
 
