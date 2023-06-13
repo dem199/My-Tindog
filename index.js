@@ -49,7 +49,7 @@ function end() {
 function swipe(direction) {
     const reaction = document.getElementById('reaction')
     reaction.classList.add(`reaction-${direction}`)   
-}
+}``
 
 function render() {
     document.getElementById('dog').innerHTML = dog.getDogHtml()
